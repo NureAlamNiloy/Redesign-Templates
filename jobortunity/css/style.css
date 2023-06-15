@@ -1,0 +1,1771 @@
+/* 
+Template Name: Jobortuinty
+Author: Md. Niloy
+Design-by : Niloy
+Version: 2345
+
+    Table of Content
+========================
+    A.Common Css
+    B. Home Page
+        1. Header 
+        2. Banner
+        3. Job selection 
+        4. Categories 
+        5. work 
+        6. Resent job
+        7. Want To Work 
+        8. Worker 
+        9. team
+        10. counter
+        11. footer
+
+    C. Resent Job Page
+        1. Breadcrumb
+        2. Resent job 
+
+    D. Top Candidate  page
+    E. 404 page
+        1. Error 
+
+    F. Contact Page
+        1. Contact From 
+
+    G. Recent Jobs with Sidebar
+        1. Resent job sidebar 
+
+    H. Top Candidates with Sidebar
+        1. Worker 
+
+    I. Job Details Page    
+        1. Breadcrumb 
+        2. Resent job
+        3. Job Details
+
+    J. Employer Profile Page
+        1.Profile 
+
+
+
+*/
+
+
+/* common css start*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Arimo', sans-serif;
+    overflow-x: hidden !important;
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,span,a,p{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #444444;
+}
+
+/* Section heading start */
+
+.section-heading h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    color: #222222;
+    padding-bottom: 20px;
+    position: relative;
+}
+.section-heading{
+    margin-bottom: 50px;
+}
+.section-heading h2:before {
+    position: absolute;
+    content: "";
+    height: 0px;
+    width: 50px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    border-bottom: 5px solid #00b8ef;
+    border-radius: 5px;
+}
+.section-heading p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    padding: 0px 240px;
+    line-height: 26px;
+    padding-top: 20px;
+}
+
+/* web button */
+.web-btn button{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    box-shadow: 0px 0px 50px 1px rgb(8 186 239 / 35%);
+    border: 0px;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 3px;
+}
+
+.web-btn button:hover {
+    background-image: linear-gradient(to right, #58d2f5, #00b8ef);
+    color: #ffffff;
+}
+
+/* Section heading end */
+
+/* back to top */
+
+.backTop{
+    position: fixed !important;
+    right: 36px;
+    bottom: 50px;
+    z-index: 9999;
+    display: none;
+}
+
+.backTop i{
+    color: #fff;
+    background-image: linear-gradient(to right, #58d2f5, #00b8ef);
+    
+    cursor: pointer;
+    padding:10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 22px;
+}
+.backTop i:hover{
+    background-image: linear-gradient(to right,#00b8ef, #58d2f5 );
+}
+
+
+
+/* ========================= common css end ==========================*/
+
+/* ============================ B. Home Page==================================== */
+
+/* header Part Start */
+.menu{
+    border-top: 5px solid #abe5fa;
+    background-color: #fef8ff;
+}
+#customnav > ul > li > a{
+    margin: 55px 25px 0px 25px;
+    color: #848484;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    transition: .3s;
+}
+#customnav ul li .dropdown-menu,
+#customnav ul li .dropdown-menu li, 
+#customnav ul li .dropdown-menu li .dropdown-divider{
+    padding: 0;
+    margin: 0;
+}
+#customnav ul li .dropdown-menu li a{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    transition: .3s;
+    color: #fff;
+    padding: 10px;
+}
+#customnav ul li .dropdown-menu{
+    background-image: linear-gradient(to right, #58d2f5, #00b8ef);
+}
+#customnav ul li .dropdown-menu li a:hover{
+    background: none;
+}
+#customnav ul li .dropdown-menu li:hover{
+    background-image: linear-gradient(to right, #00b8ef ,#58d2f5) !important;
+}
+#customnav ul li .dropdown-menu li hr{
+  color: #00b8ef;  
+}
+#customnav > ul > li{
+    position: relative;
+}
+#customnav > ul > li:after{
+    position: absolute;
+    content: "";
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 5px;
+    background-color: #00b8ef;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+#customnav > ul > li:hover:after{
+    opacity: 1;
+}
+/* #customnav  ul  li:after.active {
+    opacity: 1 !important;
+} */
+
+#customnav ul li a:hover{
+    color: #00b8ef;
+}
+.headedr-button button{
+    margin-top: 40px !important;
+}
+
+/* header Part end */
+
+/* Banner part Start */
+
+.banner{
+    background-color: #fef8ff;
+}
+.banner-text h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 58px;
+    font-weight: 400;
+    color: #222222;
+    padding-top: 145px;
+}
+.banner-text p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #222222;
+    padding-top: 15px;
+    margin-bottom: 190px;
+}
+
+/* Banner part Start */
+
+/* Job selection part start */
+.job-selection{
+    margin-top: -41px;
+}
+
+.input input{
+    border: 1px solid #dddddd;
+    color: #bbbbbb;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    height: 45px;
+    border-radius: 0px;
+    width: 100%;
+    padding: 0 15px;
+}
+.input input:focus{
+ outline: none;
+}
+.select-sec select{
+    color: #bbbbbb;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    height: 45px;
+    border-radius: 0px;
+    width: 100%;
+    padding: 0 15px;
+    border: 1px solid #dddddd;
+}
+.select-sec select:focus{
+    outline: none;
+}
+.select-btn button{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    box-shadow: 0px 0px 50px 1px rgb(8 186 239 / 35%);
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border: none;
+}
+.select-btn button:hover {
+    background-image: linear-gradient(to right, #58d2f5, #00b8ef);
+    color: #ffffff;
+}
+.job-selection .nav-pills .nav-link.active{
+background-image: linear-gradient(to right, #58d2f5, #00b8ef);
+    color: white;
+    outline: none;
+}
+.job-selection .nav-pills .nav-link{
+    background: none;
+    border: none;
+}
+.job-selection ul li button{
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #656365;
+    padding: 10px 18px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.select-sec{
+    padding: 35px 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 60px 2px rgb(140 140 140 / 20%)
+}
+
+/* Job selection part end */
+
+/* ===== Categories  css start ===== */
+
+#Categories{
+    margin: 100px 0 30px 0;
+}
+.popular-content{
+    margin-top: 50px;
+}
+.popular-card{
+    background-color: #f5f5f5;
+    padding: 50px 20px 10px;
+    transition: 0.5s  !important;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 1px rgb(8 186 239 / 10%);
+}
+.popular-card:hover{
+    background: linear-gradient(to right, #00b8ef 0%, #58d2f5 100%);
+    box-shadow: 0px 0px 20px 1px rgb(8 186 239 / 35%);
+    transform: scale(1.2);
+    border-radius: 10px;
+    /* transform: translatey(-15px); */
+}
+.popular-card:hover h3{
+    font-size: 26px;
+    color: #fff;
+}
+.popular-card h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 22px;
+    font-weight: 400;
+    color: #222222;
+    line-height: 26px;
+    padding: 8px 0px;
+}
+.popular-card:hover p{
+    font-size: 17px;
+    color: #fff;
+}
+.popular-card p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+}
+.popular-card a{
+    display: inline-block;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: #00b8ef;
+    opacity: 0;
+    transform: translatey(-50px);
+    transition: 0.5s;
+}
+.popular-card:hover a{
+    opacity: 1;
+    transform: translatey(0);
+}
+
+/* ===== Categories css end ===== */
+
+
+/* work part start */
+
+.work{
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+.work-item h2 {
+    padding: 20px 0px 30px 0px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    color: #222222;
+}
+.work-item p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #444444;
+    padding-bottom: 60px;
+}
+.work-item img{
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 15px #dddddd;
+    transition: .6s;
+}
+.work-item:hover img{
+    background-color: #58d2f5;
+}
+.work-item-md{
+    position: relative;
+}
+.work-item-md::after{
+    content: "";
+    position: absolute;
+    left: -130px;
+    top: 40px;
+    width: 70%;
+    border: 1px dashed #dddddd;
+}
+.work-item-md::before{
+    content: "";
+    position: absolute;
+    right: -130px;
+    top: 40px;
+    width: 70%;
+    border: 1px dashed #dddddd;
+}
+
+/* work part end */
+
+/* Resent job part start */
+
+.resent-job{
+    padding: 50px 0;
+}
+.resent-job-btn button{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    box-shadow: 0px 0px 50px 1px rgb(8 186 239 / 35%);
+    border: 0px;
+    color: #ffffff;
+    padding: 10px 40px;
+    border-radius: 3px;
+}
+
+.resent-job-btn button:hover {
+    background-image: linear-gradient(to right, #58d2f5, #00b8ef);
+    color: #ffffff;
+}
+
+
+.resent-job .col-md-5 input{
+    border: 1px solid #dddddd;
+    color: #bbbbbb;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    height: 50px;
+    border-radius: 0px;
+    width: 100%;
+    padding: 0 15px;
+}
+.resent-job input:focus{
+ outline: none;
+}
+.resent-job select{
+    color: #bbbbbb;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    height: 50px;
+    border-radius: 0px;
+    width: 100%;
+    padding: 0 15px;
+    border: 1px solid #dddddd;
+}
+.resent-job select:focus{
+    outline: none;
+}
+.resent-job-checkox{
+    display: flex;
+    padding: 40px 30px 50px 0 ;
+}
+.resent-job-checkox div label{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 18px;
+    color: #b5b5b5;
+}
+.resent-job-checkox div input{
+    height: 15px;
+    width: 15px;
+    border-radius: 3px;
+    background-color: #eee;
+    border-color: #eee;
+}
+
+.resent-job-item{
+    margin: 15px 0;
+    background-color: #f5f5f5;
+    padding: 20px;
+    align-items: center;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.resent-job-item:hover{
+    background-image: linear-gradient(to right, #58d2f5, #00b8ef);
+    box-shadow: 0px 0px 50px 1px rgb(8 186 239 / 35%);
+}
+.resent-job-item span{
+    color: #00b8ef;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 6px;
+}
+
+.resent-job-item h4{
+    color: #222222;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 12px;
+}
+.resent-job-item h6 {
+        color: #444444;
+        font-family: 'Arimo', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+}
+
+.resent-job-itembtn button{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    box-shadow: 0px 0px 50px 1px rgb(8 186 239 / 35%);
+    border: 0px;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 3px;
+}
+.resent-job-item:hover .resent-job-itembtn button{
+    color: #444444;
+    background-color: #ffffff;
+    background-image: none;
+}
+.resent-job-item p{
+    font-size: 16px;
+    color: #444444;
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+}
+.resent-job-item:hover p,
+.resent-job-item:hover h6,
+.resent-job-item:hover h4,
+.resent-job-item:hover span,
+.resent-job-item:hover i{
+    color: #ffffff;
+}
+
+/* Resent job part end */
+
+/* want to  work part start */
+
+.want-work{
+    padding: 50px 0;
+}
+.want-work-item{
+    padding: 30px 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 50px 1px whitesmoke;
+}
+.want-work-item h3{
+    color: #222222;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.want-work-item h6{
+    color: #00b8ef;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.want-work-item p{
+    color: #222222;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 20px 0;
+}
+.want-work-item a{
+    color: #222222;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.want-work-item1:hover{
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transition: .6s;
+    box-shadow: 0px 0px 50px 1px whitesmoke;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+.want-work-item2{
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    box-shadow: 0px 0px 50px 1px rgb(8 186 239 / 35%);
+}
+.want-work-item2 a,
+.want-work-item2 p,
+.want-work-item2 h6,
+.want-work-item2 h3{
+    color: #fff;
+}
+.want-work-item2:hover{
+    transition: .6s;
+    transform: translateY(-20px);
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    box-shadow: 0px 0px 50px 1px rgb(8 186 239 / 35%);
+}
+/* want to  work part end */
+
+/* Worker part start */
+
+.worker{
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+.worker-card{
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    position: relative;
+}
+.worker-card::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    height: 5px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    
+    
+}
+.worker-card:hover::after{
+    width: 100%;
+    background-image: linear-gradient(to right,#58d2f5, #00b8ef);
+    height: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 8px;
+}
+
+.worker-card::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    height: 35%;
+    left: 0;
+    transform: translatey(-50%);
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    width: 5px;
+    -webkit-transform: translatey(-50%);
+    -moz-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    -o-transform: translatey(-50%);
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    
+    
+}
+.worker-card:hover::before{
+    height: 100%;
+    background-image: linear-gradient(to right,#58d2f5, #00b8ef);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 8px;
+}
+ 
+.worker-card-img{
+    position: relative;
+}
+.worker-card-img div p{
+    border: 2px solid #fff;
+    position: absolute;
+    right: 65px;
+    bottom: 5px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 45px;
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+}
+.worker-card h2{
+    color: #222222;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+.worker-card h4{
+    color: #222222;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.worker-card span i{
+    color: #f68b1e;
+    padding-bottom: 30px;
+}
+.worker-card span{
+    
+    color: #000000;
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.worker-detail h6{
+    color: #222222;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+.worker-detail h4{
+    color: #222222;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 0;
+} 
+.worker-detail h4 span{
+    color: #222222;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.worker-detail hr{
+    color: #ddd;
+}
+.worker-card a {
+    color: #222222;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    transition:.3s;
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+}
+.worker-card:hover a{
+    color:  #00b8ef;
+}
+
+
+/* Worker part end */
+
+
+
+
+/* ====================================================== */
+            /* ===== tame css start ===== */
+/* ====================================================== */
+.tame-items img{
+    border: 5px solid rgba(8, 8, 8, 0.322);
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.tame-items:hover img{
+    transform: scale(1.1);
+}
+.tame-items{
+    position: relative;
+}
+.tame-items a{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    background: linear-gradient(to right, #00b8ef 0%, #58d2f5 100%);
+    border-radius: 50px;
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.tame-items h4{
+    font-family: 'Lobster Two', cursive;
+    font-size: 24px;
+    color: #999999;
+    margin-top: 30px;
+}
+.img-content img{
+    margin-top: 80px;
+    border: 5px solid rgba(8, 8, 8, 0.322);
+}
+.img-card2{
+    margin-top: 90px;
+}
+.img-card2 h4{
+    font-size: 24px;
+    color: #222222;
+    padding-bottom: 5px;
+}
+.img-card2 h5{
+    font-size: 16px;
+    color: #444444;
+    font-family: 'Arimo', sans-serif;
+}
+.star-2 i{
+    font-size: 16px;
+    color: #fbca07;
+    padding-bottom: 10px;
+}
+.img-card2 p{
+    font-size: 16px;
+    color: #999999;
+    font-family: 'Arimo', sans-serif;
+    line-height: 27px;
+}
+.banner-dots {
+    position: absolute;
+    bottom: -95px;
+    width: 100%;
+    left: -113%;
+    text-align: center;
+}
+.banner-dots  li{
+    display: inline-block;
+    margin: 0 7px;
+}
+.banner-dots  li button{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    color: transparent;
+    overflow: hidden;
+    border: none;
+    background: #89b0ae9f;
+    outline: none;
+}
+.banner-dots .slick-active button{
+    background: #00b8ef;
+}
+/* ====================================================== */
+            /* ===== tame css end ===== */
+/* ====================================================== */
+
+
+/* ====================================================== */
+            /* ===== Milestone css start ===== */
+/* ====================================================== */
+#Milestone{
+    margin: 90px 0;
+}
+.logo-png {
+    padding: 20px;
+    border: 1px solid #99999993;
+}
+.cont h2{
+    font-size: 46px;
+    color: #222222;
+    padding-bottom: 10px;
+}
+.cont h3{
+    font-size: 24px;
+    color: #222222;
+    padding-bottom: 10px;
+}
+.border-five{
+    position: relative;
+}
+.border-five::after{
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 1px;
+    top: 50%;
+    left: 7%;
+    transform: translatey(-50%);
+    background: #99999988;
+}
+.border-five::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 80%;
+    top: 9%;
+    left: 40%;
+    transform: translate(-50%);
+    background: #99999988;
+}
+/* ====================================================== */
+            /* ===== Milestone css end ===== */
+/* ====================================================== */
+
+/* ====================================================== */
+            /* ===== footer css start ===== */
+/* ====================================================== */
+#footer{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    margin-top: 30px;
+    padding-top: 50px ;
+}
+.border-footer{
+    border: 1px solid #eeecec54;
+    margin: 30px 0;
+}
+.another-content22 {
+    margin-top: 50px;
+}
+.footer-content h3{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.footer-content h3::after{
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 50px;
+    background: #00b8ef;
+    bottom: -39%;
+    border-radius: 10px;
+    left: 40%;
+}
+.footer-content p{
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+}
+.footer-content a{
+    color: #00b8ef;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.content2 p{
+    font-size: 18px;
+    color: #fff;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.content2 p:hover{
+    color: #00b8ef;
+    transform: translatex(10px);
+}
+.content22 p{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.content22 input{
+    border: none;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #777777;
+    height: 50px;
+}
+.footer-another :placeholder-shown{
+    color: #999999;
+}
+#addon-wrapping {
+    width: 30%;
+    background: #00b8ef;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.footer-icon {
+    margin-top: 30px;
+}
+.footer-icon a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background: #fff;
+    text-align: center;
+    color: #00b8ef;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.footer-icon a:hover{
+    background: #00b8ef;
+    color: #fff;
+    transform: translatey(-15px);
+}
+.border-footer-1{
+    border: 1px solid #f3f3f375;
+    margin-top: 40px;
+}
+.footer-last-item p{
+    color: #fff;
+    padding: 20px 0;
+}
+/* ====================================================== */
+            /* ===== footer css end ===== */
+/* ====================================================== */
+
+
+
+
+
+/* ============================ B. Home Page==================================== */
+
+
+/* =========================== C. Resent Job Page ========================== */
+
+
+/* Breadcrumb part start */
+
+#Breadcrumb{
+    padding: 70px 0;
+    background-color: #fef8ff;
+}
+#Breadcrumb ul li{
+    display: inline-block;
+     font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    font-weight: 400;
+}
+#Breadcrumb ul li a{
+    color: #444444;
+}
+#Breadcrumb ul li a:hover{
+    color: #00b8ef;
+}
+#Breadcrumb h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #222222;
+    padding-bottom: 15px;
+}
+
+/* Breadcrumb part end */
+
+/* Resent job part start */
+
+.page-num ul li{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    color: #999999;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #dedede;
+    margin: 0px 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.page-num ul li:hover{
+    color: #fff;
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    box-shadow: 0px 0px 50px 1px rgb(8 186 239 / 35%);
+    border-color: #58d2f5;
+}
+
+/* Resent job part end */
+
+
+
+/* =========================== C. Resent Job Page ========================== */
+
+
+/* =========================== E. 404 page ========================== */
+
+/* error part start */
+
+.error a{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    box-shadow: 0px 0px 50px 1px rgb(8 186 239 / 35%);
+    border: 0px;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 3px;
+    margin-bottom: 20px !important;
+}
+
+.error a:hover {
+    background-image: linear-gradient(to right, #58d2f5, #00b8ef);
+    color: #ffffff;
+}
+
+/* error part end */
+
+
+/* =========================== E. 404 page ========================== */
+
+
+/* =========================== F. Contact Page ========================== */
+
+/* Contact From Start */
+
+.contact{
+    padding: 100px 0;
+    background-image: url("../images/contact-us-banner.png");
+    background-position: center;
+    background-size: cover;
+}
+.contact ul li i{
+    height: 60px;
+    width: 60px;
+    background-image: linear-gradient(to right, #58d2f5, #00b8ef);
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 19px;
+    border: 1px solid #dedede;
+    margin: 0px 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+.contact ul li p{
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+    padding-right: 10px;
+}
+.contact ul{
+    display: flex ;
+}
+.contact ul {
+    padding-top: 40px;
+}
+
+.contact-from input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #dddddd;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+.textarea input{
+    width: 100%;
+    height: 190px;
+    border: 1px solid #dddddd;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border-radius: 0px;
+    padding-bottom: 140px;
+}
+.contact-from button{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    box-shadow: 0px 0px 50px 1px rgb(8 186 239 / 35%);
+    border: 0px;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact-from button:hover {
+    background-image: linear-gradient(to right, #58d2f5, #00b8ef);
+    color: #ffffff;
+}
+
+/* Contact From end */
+
+/* =========================== F. Contact Page ========================== */
+
+
+/* =========================== G. Recent Jobs with Sidebar ========================== */
+
+
+/* Resent job sidebar part start */
+
+.job-sidebar-checkbox h3 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #222222;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.job-sidebar-checkbox .row label,
+.job-sidebar-checkbox .row span{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #b5b5b5;
+    font-weight: 500;
+    display: inline-block;
+    padding-left: 6px;
+    padding-top: 15px;
+}
+
+.salary-rang label{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #222222;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.salary-rang input{
+    width: 80%;
+    background: #DDD;
+}
+
+.resent-job-sidebar .resent-job-itembtn button{
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    border: 0px;
+    color: #ffffff;
+    padding: 10px 10px;
+}
+
+/* Resent job sidebar part end */
+
+
+
+
+/* =========================== G. Recent Jobs with Sidebar ========================== */
+
+
+
+
+/* =========================== H. Top Candidates with Sidebar========================== */
+
+
+/* Worker part Start */
+
+.top-worker-sidebar .worker-card-img div p{
+    right: 86px;
+    bottom: 5px;
+}
+.top-worker-sidebar {
+    background-color: #ffffff;
+}
+
+.top-worker-sidebar .worker-card {
+    background-color: #f5f5f5;
+}
+
+.worker-sidebar-input h2{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #222222;
+    padding-bottom: 20px;
+}
+
+.worker-sidebar-input input,
+.worker-sidebar-input select{
+    height: 40px;
+    margin: 0px !important;
+    width: 100%;
+    color: #c9c9c9;
+    border: 1px solid #dddddd;
+    padding-left: 10px;
+    margin-bottom: 40px !important;
+}
+.worker-sidebar-input input:focus
+.worker-sidebar-input select:focus{
+    outline: none;
+}
+
+
+
+/* Worker part end */
+
+
+/* =========================== H. Top Candidates with Sidebar========================== */
+
+
+
+
+/* =========================== I. Job Details Page========================== */
+
+
+/*  Breadcrumb part start */
+
+.Breadcrumb-btn a{
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    color: #00b8ef;
+    font-weight: 400;
+    padding: 15px;
+    border: 1px solid #00b8ef;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+.Breadcrumb-btn a:focus{
+    outline: none;
+}
+
+.Breadcrumb-btn:last-child a{
+    border: 0;
+    color: #444;
+}
+.Breadcrumb-btn:hover a{
+    color: #00b8ef;
+    border: 1px solid #00b8ef;
+}
+
+/* Breadcrumb part End */
+
+/* Resent job part start */
+
+.job-details-head{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    color: #222222;
+    margin: 60px 0px 30px 0px;
+}
+
+/* Resent job part end */
+
+/* Job Details Part Start */
+
+.job-detail h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #222222;
+    
+}
+.job-detail div:first-child h3{
+    margin-top: 80px;
+}
+
+.job-detail p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    color: #575757;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.job-detail ul li i{
+    font-size: 16px;
+    color: #575757;
+    line-height: 26px;
+    margin-right: 10px;
+}
+.job-detail ul li {
+    display: flex;
+    margin-top: 20px;
+}
+.job-detail-sec .container{
+    padding-bottom: 50px;
+}
+
+.job-detail-sec hr{
+    color: #ddd;
+}
+
+.job-detail-sidebar{
+    background-color: #ffffff;
+    box-shadow: 0 0 15px #ddd;
+    padding-top: 100px;
+    width: 100%;
+}
+.job-detail-sidebar h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #222222;
+    margin: 15px 0;
+}
+
+
+.job-detail-sidebar ul li i{
+    color: #444444;
+    font-size: 14px;
+    padding-right: 15px !important;
+    line-height: 30px;
+}
+
+.job-detail-sidebar ul li span{
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    color: #444444;
+    line-height: 30px;
+}
+.job-detail-icon p,
+.job-detail-icon a{
+    display: inline-block;
+}
+.job-detail-icon p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #444444;
+}
+.job-detail-icon a i{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px ;
+    border: 1px solid #dddddd;
+    font-size: 16px ;
+    color: #a9a9a9;
+}
+.job-detail-icon a i:hover{
+    border-color: #58d2f5;
+    color: #fff;
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    box-shadow: 0px 0px 20px 1px rgb(8 186 239 / 35%);
+}
+
+.salary-detail ul{
+    padding: 60px 0;
+}
+.salary-detail ul li{
+    padding: 10px 0;
+}
+.map-title{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    padding: 35px 0;
+}
+
+/* Job Details Part End */
+
+/* =========================== I. Job Details Page ========================== */
+
+
+
+/* =========================== J. Employer Profile Page ========================== */
+
+/* Profile Part Start */
+
+#profile{
+    padding: 100px 0;
+}
+#profile .worker-card-img div p{
+    right: 20px;
+    bottom: 6px;
+}
+
+.profile-heading .employ-pro-details  h3 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #444444;
+}
+.profile-heading .employ-pro-details   h4 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #444444;
+}
+.profile-heading .employ-pro-details  i {
+    font-size: 18px;
+    color: #ffb527;
+    margin: 10px 2px 0px 2px;
+}
+.profile-heading .employ-pro-details  h5 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    margin-top: 26px;
+}
+
+.profile-heading .employ-pro-details span {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #222222;
+    margin-top: 16px;
+    display: inline-block;
+}
+
+.profile-info ul li{
+    padding-left: 45px;
+    line-height: 40px;
+    color: #686868;
+}
+.profile-btn a{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid  #00b8ef;
+    color: #222;
+    padding: 12px 18px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.profile-btn a:hover {
+    background-image: linear-gradient(to right, #58d2f5, #00b8ef);
+    color: #ffffff;
+}
+.profile-details{
+    margin-top: 80px;
+}
+.profile-details nav button{
+    background: none;
+    font-family: 'Arimo', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #999999;
+    padding: 12px 24px;
+}   
+.profile-details nav button:focus{
+    outline: none;
+    color: #222222 !important;
+}
+.profile-details-text h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #222222;
+    padding: 30px 0;
+}
+.profile-details-text p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 26px;
+}
+.profile-details-text ul li i{
+    font-size: 16px;
+    color: #444444;
+    line-height: 26px;
+    padding-right: 10px;
+}
+.profile-details-text ul li{
+    padding: 7px 0;
+    display: flex;
+}
+
+.employ-share {
+    margin-top: 80px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 20px 0px rgb(140 140 140 / 20%);
+    padding: 10px;
+}
+.employ-share div{
+    display: flex;
+}
+.employ-share h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #444444;
+    display: inline-block
+}
+.employ-share i {
+    padding: 0 15px;
+    font-size: 16px;
+    color: #444444;
+    transition: .3s ;
+    line-height: 31px;
+}
+.employ-share i:hover {
+    color: #fa4444;
+}
+.profile-contact-from{
+    padding: 70px 10px 0 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px -5px rgb(0 0 0 / 10%);
+}
+.profile-exprience h3,
+.profile-feedback h3,
+.profile-contact-from h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #444444;
+    margin: 30px 0px;
+}
+.profile-contact-from input:focus{
+    outline: none;
+}
+.profile-contact-from input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #dddddd;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+.profile-contact-from textarea:focus{
+    outline: none;
+}
+.profile-contact-from textarea{
+    width: 100%;
+    height: 250px;
+    border: 1px solid #dddddd;
+    padding-left: 10px;
+    padding-bottom: 210px;
+    margin-bottom: 15px;
+    border-radius: 0px;
+    resize: none;
+}
+.profile-contact-from button {
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-image: linear-gradient(to right, #00b8ef, #58d2f5);
+    box-shadow: 0px 0px 50px 1px rgb(8 186 239 / 35%);
+    border: 0px;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 3px;
+    width: 100%;
+    margin: 20px 0;
+}
+.profile-contact-from button:hover {
+    background-image: linear-gradient(to right, #58d2f5, #00b8ef);
+    color: #ffffff;
+}
+.profile-exprience ul li{
+    color: #222222;
+    padding: 5px 0;
+}
+.employ-feed-txt h4{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #444444;
+}
+.employ-feed-txt h5 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+.employ-feed-txt  p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    margin-bottom: 12px;
+}
+.employ-feed-txt a {
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #444444;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.profile-feedback i{
+    color: #f9c011;
+    font-size: 20px;
+}
+.profile-feedback hr{
+    color: #f5f5f5;
+}
+.profile-feedback:last-child i:last-child{
+    color: #dddddd;
+}
+
+/* Profile Part End */
+
+/* =========================== J. Employer Profile Page ========================== */

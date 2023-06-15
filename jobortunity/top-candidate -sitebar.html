@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Candidates with Sidebar</title>
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="images/home-page-logo.png" type="image/x-icon">
+    <!-- Link googlr font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arimo:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Link fontawasm -->
+    <link rel="stylesheet" href="css/fontawesm-all.css">
+    <!-- link Slick Slider -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- link defult css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    
+<!-- header Part Start -->
+<div class="customnav sticky-top w-100">
+  <nav class="navbar navbar-expand-lg menu">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="images/home-page-logo(2).png" class="w-100" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#customnav" aria-controls="customnav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse " id="customnav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Find a job </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="resent-job.html">Recents Jobs</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="resent-job-sitebar.html">Recents Jobs With SideBar</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="job-details.html">Job Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Candidates 
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="top-candidate.html">Top Candidates</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="top-candidate -sitebar.html">Top Candidates With SideBar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="contact.html">Contact Page </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex headedr-button web-btn">
+        <button type="submit">Signup / Login</button>
+      </form>
+    </div>
+  </div>
+</nav></div>
+
+<!-- header Part end -->
+
+<!-- Breadcrumb part start -->
+<section id="Breadcrumb"><div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+        <h2>Top Candidates with Sidebar</h2>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><i class="fas fa-angle-right"></i></li>
+          <li>Top Candidates with Sidebar</li>
+        </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- Breadcrumb part end -->
+
+
+<!-- Worker part start -->
+
+  <section class="worker top-worker-sidebar">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 mt-5">
+            <div class="worker-sidebar-input">
+              <h2>Search keywords</h2>
+              <input type="search" placeholder="Search By Name">
+              <h2>Search by location </h2>
+              <input type="search" placeholder="Search By Location">
+              <h2>Search by category</h2>
+              <select>
+                <option selected>Graphic Design</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+  
+            <div class="job-sidebar-checkbox mt-5">
+              <h3>Last activity</h3>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>365 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  Freelance
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>3652 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  Part Time
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>1245 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  All
+                </label>
+                </div>
+                <div class="col-6">
+                  <span> 5045 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+            </div>
+  
+            <div class="salary-rang mt-5">
+              <label for="customRange1">Salary Range</label>
+              <input type="range" id="customRange1">
+              <div class="row">
+                <div class="col-6">125</div>
+                <div class="col-6 text-center">1250</div>
+              </div>
+            </div>
+
+            <div class="job-sidebar-checkbox mt-5">
+              <h3>Skills</h3>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+            </div>
+  
+            <div class="job-sidebar-checkbox mt-5">
+              <h3>Experience</h3>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6 text-start">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6 ">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 text-start">
+                  <input type="checkbox" value="" id="flexCheckChecked">
+                <label for="flexCheckChecked">
+                  full Time
+                </label>
+                </div>
+                <div class="col-6 ">
+                  <span>255 Jobs</span> 
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="row">
+            <div class="col-md-6 mt-5">
+              <div class="worker-card text-center">
+                <div class="worker-card-img">
+                  <img src="images/our-worker-img-1(2).png" alt="worker image">
+                  <div>
+                    <p>1</p>
+                  </div> 
+                </div>
+                  <h2>Alex Smith</h2>
+                  <h4>Web Developer</h4>
+                  <span><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>&nbsp; 5.0 (520 reviews)</span>
+                <div class="worker-detail">
+                  <div class="row">
+                    <hr>
+                    <div class="col-6">
+                      <h6>Hourly Rate</h6>
+                    </div>
+                    <div class="col-6">
+                      <h4> $ 25.00<span>/hr</span></h4>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <div class="worker-detail">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6>Location</h6>
+                    </div>
+                    <div class="col-6">
+                      <h6>Bangladesh <img src="images/bangladesh-work-logo(2).png" alt=""></h6>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <div class="worker-detail">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6>Job Success</h6>
+                    </div>
+                    <div class="col-6">
+                      <h4>100%</h4>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <a href tabindex="0">View Profile  <i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-5">
+              <div class="worker-card text-center">
+                <div class="worker-card-img">
+                  <img src="images/our-worker-img-2(2).png" alt="worker image">
+                  <div>
+                    <p>2</p>
+                  </div> 
+                </div>
+                  <h2>Marie Ann</h2>
+                  <h4>Graphic Designer</h4>
+                  <span><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>&nbsp; 4.8 (220 reviews)</span>
+                <div class="worker-detail">
+                  <div class="row">
+                    <hr>
+                    <div class="col-6">
+                      <h6>Hourly Rate</h6>
+                    </div>
+                    <div class="col-6">
+                      <h4> $ 15.00<span>/hr</span></h4>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <div class="worker-detail">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6>Location</h6>
+                    </div>
+                    <div class="col-6">
+                      <h6>Bangladesh <img src="images/bangladesh-work-logo(2).png" alt=""></h6>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <div class="worker-detail">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6>Job Success</h6>
+                    </div>
+                    <div class="col-6">
+                      <h4>100%</h4>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <a href tabindex="0">View Profile  <i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-5">
+              <div class="worker-card text-center">
+                <div class="worker-card-img">
+                  <img src="images/our-worker-img-3(2).png" alt="worker image">
+                  <div>
+                    <p>3</p>
+                  </div> 
+                </div>
+                  <h2>Tamim Turjo</h2>
+                  <h4>Web Designer</h4>
+                  <span><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>&nbsp; 4.5 (1520 reviews)</span>
+                <div class="worker-detail">
+                  <div class="row">
+                    <hr>
+                    <div class="col-6">
+                      <h6>Hourly Rate</h6>
+                    </div>
+                    <div class="col-6">
+                      <h4> $ 20.00<span>/hr</span></h4>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <div class="worker-detail">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6>Location</h6>
+                    </div>
+                    <div class="col-6">
+                      <h6>Bangladesh <img src="images/bangladesh-work-logo(2).png" alt=""></h6>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <div class="worker-detail">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6>Job Success</h6>
+                    </div>
+                    <div class="col-6">
+                      <h4>100%</h4>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <a href tabindex="0">View Profile  <i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+    
+            <div class="col-md-6 mt-5">
+              <div class="worker-card text-center">
+                <div class="worker-card-img">
+                  <img src="images/top-candidates-img-4.png" alt="worker image">
+                  <div>
+                    <p>4</p>
+                  </div> 
+                </div>
+                  <h2>Jennifer Gomz</h2>
+                  <h4>Web Developer</h4>
+                  <span><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>&nbsp; 5.0 (520 reviews)</span>
+                <div class="worker-detail">
+                  <div class="row">
+                    <hr>
+                    <div class="col-6">
+                      <h6>Hourly Rate</h6>
+                    </div>
+                    <div class="col-6">
+                      <h4> $ 25.00<span>/hr</span></h4>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <div class="worker-detail">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6>Location</h6>
+                    </div>
+                    <div class="col-6">
+                      <h6>Bangladesh <img src="images/bangladesh-work-logo(2).png" alt=""></h6>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <div class="worker-detail">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6>Job Success</h6>
+                    </div>
+                    <div class="col-6">
+                      <h4>100%</h4>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <a href tabindex="0">View Profile  <i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-5">
+              <div class="worker-card text-center">
+                <div class="worker-card-img">
+                  <img src="images/top-candidates-img-5.png" alt="worker image">
+                  <div>
+                    <p>5</p>
+                  </div> 
+                </div>
+                  <h2>Gomez Rostario</h2>
+                  <h4>Graphic Designer</h4>
+                  <span><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>&nbsp; 4.8 (220 reviews)</span>
+                <div class="worker-detail">
+                  <div class="row">
+                    <hr>
+                    <div class="col-6">
+                      <h6>Hourly Rate</h6>
+                    </div>
+                    <div class="col-6">
+                      <h4> $ 15.00<span>/hr</span></h4>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <div class="worker-detail">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6>Location</h6>
+                    </div>
+                    <div class="col-6">
+                      <h6>Bangladesh <img src="images/bangladesh-work-logo(2).png" alt=""></h6>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <div class="worker-detail">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6>Job Success</h6>
+                    </div>
+                    <div class="col-6">
+                      <h4>100%</h4>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <a href tabindex="0">View Profile  <i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-5">
+              <div class="worker-card text-center">
+                <div class="worker-card-img">
+                  <img src="images/our-worker-img-3(2).png" alt="worker image">
+                  <div>
+                    <p>6</p>
+                  </div> 
+                </div>
+                  <h2>Tamim Turjo</h2>
+                  <h4>Web Designer</h4>
+                  <span><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>&nbsp; 4.5 (1520 reviews)</span>
+                <div class="worker-detail">
+                  <div class="row">
+                    <hr>
+                    <div class="col-6">
+                      <h6>Hourly Rate</h6>
+                    </div>
+                    <div class="col-6">
+                      <h4> $ 20.00<span>/hr</span></h4>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <div class="worker-detail">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6>Location</h6>
+                    </div>
+                    <div class="col-6">
+                      <h6>Bangladesh <img src="images/bangladesh-work-logo(2).png" alt=""></h6>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <div class="worker-detail">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6>Job Success</h6>
+                    </div>
+                    <div class="col-6">
+                      <h4>100%</h4>
+                    </div> 
+                    <hr>
+                  </div>
+                </div>
+                <a href tabindex="0">View Profile  <i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+    
+            <div class="row mt-5 justify-content-center">
+              <div class="col-12 text-center mt-5 mt-md-0">
+                <div class="page-num">
+                  <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li><i class="fas fa-angle-right"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Worker part end -->
+
+
+<!-- ================================================ -->
+              <!-- Milestone part html start -->
+<!-- ================================================ -->
+<section id="Milestone">
+  <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <div class="section-heading text-center">
+        <h2>Our Milestone & Partners</h2>
+        <p class="recent-job-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-lg-7">
+      <div class="row border-five">
+        <div class="col-lg-6 my-3 col-sm-6 text-md-center col-6">
+          <div class="cont conta1">
+            <h2><span class="counteer"> 220</span>+</h2>
+            <h3>MoU Companies</h3>
+          </div>
+        </div>
+        <div class="col-lg-6 my-3 col-sm-6  text-md-start  col-6">
+          <div class="cont  conta2">
+          <h2>  <span class="counteer"> 18000</span>+</h2>
+            <h3>Employees Recruit</h3>
+          </div>
+        </div>
+        <div class="col-lg-6 my-3  col-sm-6  text-md-center  col-6">
+          <div class="cont  conta3 ">
+          <h2>  <span class="counteer"> 100 </span> %</h2>
+            <h3>Satisfied Companies</h3>
+          </div>
+        </div>
+        <div class="col-lg-6 my-3  col-sm-6  text-md-start  col-6">
+          <div class="cont  conta4 ">
+        <h2>    <span class="counteer"> 99 </span> %</h2>
+            <h3>Satisfied Employees</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6 my-3">
+         <div class="logo-png">
+          <img src="images/partner-logo-1.png" alt="" class=" w-100">
+         </div>
+        </div>
+        <div class="col-lg-6 col-sm-6  my-3">
+          <div class="logo-png">
+           <img src="images/partner-logo-2.png" alt="" class=" w-100">
+          </div>
+         </div>
+         <div class="col-lg-6 col-sm-6  my-3">
+          <div class="logo-png">
+           <img src="images/partner-logo-3.png" alt="" class=" w-100">
+          </div>
+         </div>
+         <div class="col-lg-6 col-sm-6  my-3">
+          <div class="logo-png">
+           <img src="images/partner-logo-4.png" alt="" class=" w-100">
+          </div>
+         </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  <!-- ================================================ -->
+                <!-- Milestone html part end -->
+  <!-- ================================================ -->
+
+<!-- ================================================ -->
+              <!-- footer part html start -->
+<!-- ================================================ -->
+<footer id="footer" style="background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/footer-image.jpg);">
+<div class="container">
+<div class="row justify-content-center">
+  <div class="col-lg-6 text-center">
+    <img src="images/footer-logo.png" alt="">
+  </div>
+</div>
+</div>
+<div class="border-footer"></div>
+<div class="container">
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-12 col-12 text-center">
+    <div class="footer-content another-content22">
+      <h3>About us</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+  <div class="col-lg-2  col-md-6 col-sm-6 mt-5 col-6">
+    <div class="footer-content content2">
+      <h3>For Canditates</h3>
+     <p>Browses Job</p>
+     <p> User Dashboard</p>
+     <p>Submit Resume</p>
+     <p>My Bookmarks</p>
+     <p>Job Alerts</p>
+    </div>
+  </div>
+  <div class="col-lg-2  col-md-6 mt-5 col-sm-6 col-6">
+    <div class="footer-content content2">
+      <h3>For Employees</h3>
+     <p>Browse Candidates</p>
+     <p> User Dashboard</p>
+     <p>Resume Page</p>
+     <p> Post a Job</p>
+     <p> My Bookmarks</p>
+    </div>
+  </div>
+  <div class="col-lg-4  col-md-6 mt-5 col-sm-12 text-sm-center col-12 text-center">
+    <div class="footer-content content22">
+      <h3>Subscribe for Newsletter</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+      <div class="input-group flex-nowrap footer-another">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        <span class="input-group-text" id="addon-wrapping">Subscribe</span>
+      </div>
+      <div class="footer-icon">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="border-footer-1"></div>
+<div class="container">
+<div class="row justify-content-center">
+  <div class="col-lg-6 text-center">
+    <div class="footer-last-item">
+      <p>@ Copyright 2019. All rights reserved by Designer.</p>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+<!-- ================================================ -->
+              <!-- footer html part end -->
+<!-- ================================================ -->
+
+
+
+     <!-- bac to top -->
+
+     <div class="backTop">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- bac to top -->
+
+
+
+
+
+
+<!-- <div class="section-heading text-center">
+    <h2>Recent Jobs</h2>
+    <p class="recent-job-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div> -->
+
+
+    <!-- Link Jquery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+     <!-- Link bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Slick slider plugin -->
+    <script src="js/slick.min.js"></script>
+    <!-- link Couter plugin -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- link defult js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
